@@ -1,8 +1,8 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 const Signup = () => {
 
-    const   [user,setUser] = useState(
+    /* const[user,setUser] = useState(
         {
             name:"",email:"",phone:"",password:"",cpassword:""
         }
@@ -14,39 +14,37 @@ const Signup = () => {
         value = e.target.value;
 
         setUser({ ...user, [name]:value});
-    }
+    } */
     return (
         <>
     <h2 className = "mb-3">Signup</h2>
         <form>
   <div className="form-group mt-3">
-    <input type="text" className="form-control" id="name" aria-describedby="emailHelp" autoComplete = "off"
-        value = {user.name}
-        onChange = {handleInputs}
+    <input type="text" className="form-control" id="name" aria-describedby="emailHelp" 
+        
+        
     placeholder="Full Name" required/>
     </div>
     <div className="form-group mt-3">
-    <input type="email" className="form-control" id="email" aria-describedby="emailHelp" autoComplete = "off"
-        value = {user.email}
-        onChange = {handleInputs}
+    <input type="email" className="form-control" id="email" aria-describedby="emailHelp" 
+        
+        
     placeholder="Email" required/>
     </div>
     <div className="form-group mt-3">
-    <input type="tel" className="form-control" id="phone" aria-describedby="emailHelp" autoComplete = "off"
-        value = {user.phone}
-        onChange = {handleInputs}
+    <input type="tel" className="form-control" id="phone" aria-describedby="emailHelp"         
     placeholder="Phone Number" required/>
     </div>
     <div className="form-group mt-3">
-    <input type="password" className="form-control" id="password" aria-describedby="emailHelp" autoComplete = "off"
-        value = {user.password}
-        onChange = {handleInputs}
+    <input type="password" className="form-control" id="password" aria-describedby="emailHelp" 
+       
+        
     placeholder="Password" required/>
     </div>
     <div className="form-group mt-3">
-    <input type="password" className="form-control" id="cpassword" aria-describedby="emailHelp" autoComplete = "off"
-        value = {user.cpassword}
-        onChange = {handleInputs}
+    <input type="password" className="form-control" id="cpassword" aria-describedby="emailHelp" 
+        
+        
     placeholder="Confirm Password" required/>
     </div>
   <div className="form-check mt-3">
@@ -56,7 +54,7 @@ const Signup = () => {
   <button type="submit" className="btn btn-primary btn-block mt-3">Register as Candidate</button>
 </form>
         </>
-    )
-}
+    );
+    }
 
 export default Signup;
